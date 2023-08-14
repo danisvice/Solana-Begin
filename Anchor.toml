@@ -1,0 +1,15 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+new_project = "D2ddLjQTShwD1QDAuiUEeEjxpLie2tKs32VxzTNDBsmk"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/home/d4k/.config/solana/id.json"
+
+[scripts]
+test = "yarn run mocha -t 1000000 tests/"
