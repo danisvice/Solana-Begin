@@ -1,15 +1,15 @@
 use anchor_lang::prelude::*;
 
-declare_id!("D2ddLjQTShwD1QDAuiUEeEjxpLie2tKs32VxzTNDBsmk");
+declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
 
 #[program]
-pub mod new_project {
+pub mod testprogram {
     use super::*;
 
-    pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
+    pub fn test_function(ctx: Context<TestFunction>) -> Result<()> {
         Ok(())
     }
 }
 
 #[derive(Accounts)]
-pub struct Initialize {}
+pub struct TestFunction {}
